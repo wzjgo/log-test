@@ -23,8 +23,8 @@ func main() {
 	// 	log.Fatalln("Faild to open error logger file:", err)
 	// }
 	//自定义日志格式
-	infoLog = log.New(os.Stdout, "Info:", log.Ldate|log.Ltime|log.Lshortfile)
-	errorLog = log.New(os.Stdout, "Error:", log.Ldate|log.Ltime|log.Lshortfile)
+	infoLog = log.New(os.Stdout, "Info-dev:", log.Ldate|log.Ltime|log.Lshortfile)
+	errorLog = log.New(os.Stdout, "Error-dev:", log.Ldate|log.Ltime|log.Lshortfile)
 	c := time.Tick(1 * time.Second)
 	for range c {
 		printLog()
